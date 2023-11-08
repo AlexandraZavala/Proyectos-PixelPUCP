@@ -5,4 +5,4 @@ Proyecto 1: Calculadora Web
             HTML | CSS | JavaScript
 
 Proyecto 2: Portafolio Grupal (Front-End)
-            NodeJS | CSS | JavaScript | 
+            NodeJS | CSS | JavaScript | React
