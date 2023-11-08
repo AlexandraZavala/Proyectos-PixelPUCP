@@ -1,0 +1,139 @@
+/* Sección de la calculadora */
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 630px;
+    background: linear-gradient(to top, #1e2124 20%, #585e63 80%);
+    border-radius: 40px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bloque-pantalla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    height: 200px;
+}
+
+.pantalla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.historial,
+.resultado {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.historial {
+    font-size: 26px;
+    font-weight: 300;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.resultado {
+    font-size: 42px;
+    font-weight: 600;
+    align-items: center;
+}
+
+
+.bloque-botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    padding: 10px;
+    margin: -10px 5px;
+    height: 400px;
+}
+
+.cambio-tema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    grid-column: 1 / 3;
+}
+
+.borrar-digito {
+    grid-column: 3 / 5;
+}
+
+.igualdad {
+    grid-column: 4 / 5;
+    grid-row: 6 / 8;
+}
+
+/* Color de botones */
+
+.borrar-digito:hover,
+.digitos:hover,
+.ans:hover,
+.decimal:hover{
+    background-color: #525252;
+}
+.borrar-digito:active,
+.digitos:active,
+.ans:active,
+.decimal:active {
+    background-color: #3a3a3a;
+}	
+
+.op.main{
+    background-color: #4b7bce;
+}
+.op.main:hover{
+    background-color: #5a8be6;
+}
+.op.main:active{
+    background-color: #2e4a9c;
+}
+
+.op.alt{
+    background-color: #398060c9;
+}
+.op.alt:hover{
+    background-color: #4a9a7bc9;
+}
+.op.alt:active{
+    background-color: #2e6a4ac9;
+}
+
+.borrar-todo{
+    background-color: #21b7a5;
+}
+.borrar-todo:hover{
+    background-color: #3cd7c2;
+}
+.borrar-todo:active{
+    background-color: #1e9a8a;
+}
+
+.igualdad{
+    background-color: #4252df;
+}
+.igualdad:hover{
+    background-color: #5a6be6;
+}
+.igualdad:active{
+    background-color: #2e3a9c;
+}

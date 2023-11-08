@@ -1,0 +1,69 @@
+.white{
+    background: linear-gradient(to top, #ffedd0 10%, #fff1ee 50%);;
+    color: #000;
+}
+.white .calculadora {
+    background: linear-gradient(to top, #d7d7d7 20%, #ffffff 80%);
+}
+
+.white .digitos,
+.white .borrar-digito,
+.white .ans,
+.white .decimal{
+    background-color: #efefef;
+    color: #000;
+}
+.white .borrar-digito:hover,
+.white .digitos:hover,
+.white .ans:hover,
+.white .decimal:hover{
+    background-color: #dedede;
+}
+.white .borrar-digito:active,
+.white .digitos:active,
+.white .ans:active,
+.white .decimal:active {
+    background-color: #c4c4c4;
+}
+
+.white .op.alt{
+    background-color: #fff2df;
+    color: #dc9531;
+}
+.white .op.alt:hover{
+    background-color: #eadecc;
+}
+.white .op.alt:active{
+    background-color: #d9c2a8;
+}
+
+.white .op.main{
+    background-color: #d3bde4;
+    color: #8F28E1;
+}
+.white .op.main:hover{
+    background-color: #bfb1d2;
+}
+.white .op.main:active{
+    background-color: #b19cbf;
+}
+
+.white .borrar-todo{
+    background-color: #FFB72B;
+}
+.white .borrar-todo:hover{
+    background-color: #ffd04e;
+}
+.white .borrar-todo:active{
+    background-color: #d19e26;
+}
+
+.white .igualdad{
+    background-color: #8F28E1;
+}
+.white .igualdad:hover{
+    background-color: #9f48e6;
+}
+.white .igualdad:active{
+    background-color: #7a1fc7;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Valores generales -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Hojas de estilos -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/calculator.css">
+        <link rel="stylesheet" href="./styles/theme.css">
+        <!-- Fuente para texto externo -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+        <!-- Codigo fuente de JS -->
+        <script src="./scripts/theme.js" defer></script>
+        <script src="./scripts/evaluation.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
+        <!-- Titulo -->
+        <title>Pixel PUCP - Grupo 3 - Calculadora</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="calculadora">
+                
+                <div class="bloque-pantalla">
+                    <div class="pantalla">
+                        <div class="historial" id="historial" type="text"></div>
+                        <div class="resultado" id="resultado" type="text">0</div>
+                    </div>
+                </div>
+                <div class="bloque-botones">
+                    <div class="cambio-tema">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="switch" onclick="cambiarTema()" checked>
+                            <label class="form-check-label" for="switch">Theme</label>
+                        </div>
+                    </div>
+
+                    <button class="borrar-digito" id="borrar-digito" data-type="retroceso" value="←">←</button>
+
+                    <button class="borrar-todo" id="borrar-todo" data-type="reinicio" value="AC">AC</button>
+                    <button class="op alt" id="parentesis-izq" data-type="agrupador" value="(">(</button>
+                    <button class="op alt" id="parentesis-der" data-type="agrupador" value=")">)</button>
+                    <button class="op main" id="multiplicacion" data-type="operador" value="x">x</button>
+
+                    <button class="op alt" id="raiz" data-type="operador" value="√">√</button>
+                    <button class="op alt" id="resto" data-type="operador" value="%">%</button>
+                    <button class="op alt" id="potencia" data-type="operador" value="^">^</button>
+                    <button class="op main" id="division" data-type="operador" value="/">/</button>
+
+                    <button class="digitos" id="digito-7" data-type="numero" value="7">7</button>
+                    <button class="digitos" id="digito-8" data-type="numero" value="8">8</button>
+                    <button class="digitos" id="digito-9" data-type="numero" value="9">9</button>
+                    <button class="op main" id="resta" data-type="operador" value="-">-</button>
+
+                    <button class="digitos" id="digito-4" data-type="numero" value="4">4</button>
+                    <button class="digitos" id="digito-5" data-type="numero" value="5">5</button>
+                    <button class="digitos" id="digito-6" data-type="numero" value="6">6</button>
+                    <button class="op main" id="suma" data-type="operador" value="+">+</button>
+
+                    <button class="digitos" id="digito-1" data-type="numero" value="1">1</button>
+                    <button class="digitos" id="digito-2" data-type="numero" value="2">2</button>
+                    <button class="digitos" id="digito-3" data-type="numero" value="3">3</button>
+                    <button class="igualdad" id="igualdad" data-type="igual" value="=">=</button>
+
+                    <button class="decimal" id="decimal" data-type="decimal" value=".">.</button>
+                    <button class="digitos" id="digito-0" data-type="numero" value="0">0</button>
+                    <button class="ans" id="ans" data-type="ans" value="ans">ans</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/PixelPUCP/grupo-3" target="_blank">
+                <p>Pixel PUCP - Grupo 3 - 
+                    <script>document.write(new Date().getFullYear())</script>
+                </p> 
+            </a>
+        </footer>
+    </body>
+</html>
