@@ -40,7 +40,30 @@ export default function Login() {
                 >
                     Login
                 </Text>
+
               </TouchableOpacity>
+              <Text style={styles.welcomeText}>Or</Text>
+              
+                
+              <View>
+                <TouchableOpacity style={styles.iconContainer}>
+                  <Image  source={require('../../../assets/google.png')}/>
+                </TouchableOpacity>
+              </View>
+              
+              <View >
+                <Text style={styles.textoAccount}>
+                    Don't have an account?
+                </Text>
+                
+              </View>
+              <View >
+                <TouchableOpacity>
+                  <Text style={styles.signUp}>
+                    Sign up
+                  </Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </SafeAreaView>
         </View>
@@ -60,6 +83,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     position: 'absolute',
   },
+  
   formContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -77,6 +101,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold', 
     marginBottom: 10,
   },
+  textoAccount:{
+    marginTop: 20,
+  },
   input: {
     padding: 10,
     backgroundColor: 'rgba(255, 255, 255, 0.7)',
@@ -88,8 +115,13 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     marginBottom: 20,
   },
+  signUp:{
+    color: '#61BD91',
+    fontWeight: 'bold',
+  },
   forgotPasswordText: {
     color: 'white',
+    fontWeight: 'bold',
   },
   loginButton: {
     padding: 15,
@@ -108,5 +140,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    marginTop: 20,
+  },
+  iconContainer: {
+    padding: 4,
+    backgroundColor: 'white', // Color de fondo gris claro
+    borderRadius: 16, // Bordes redondeados
   },
 });
