@@ -1,10 +1,10 @@
 import { View, Image, SafeAreaView, StyleSheet,Text,TextInput,TouchableOpacity } from 'react-native'
 import React from 'react'
-import { themeColors } from '../../../theme'
-import {ArrowLeftIcon} from 'react-native-heroicons/solid'
+import { useNavigation } from '@react-navigation/native'
 
 
 export default function Login() {
+  const navigation = useNavigation();
     return (
         <View style={styles.container}>
           <Image 
@@ -14,7 +14,7 @@ export default function Login() {
           <SafeAreaView style={{ flex: 1 }}>
             <View style={styles.formContainer}>
                 
-                <Text style={styles.welcomeText}>Welcome!</Text>
+                <Text style={styles.welcomeText}>Welcome Back!</Text>
                 <Text style={styles.text}>Enter your credentials to log in your account</Text>
                 <Text style={styles.textInput}>Email Address</Text>
                 <TextInput 
@@ -34,6 +34,7 @@ export default function Login() {
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={styles.loginButton}
+                    onPress={()=> navigation.navigate('Profile')}
                 >
                 <Text 
                     style={styles.loginButtonText}
@@ -58,7 +59,7 @@ export default function Login() {
                 
               </View>
               <View >
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=> navigation.navigate('SignUp')}>
                   <Text style={styles.signUp}>
                     Sign up
                   </Text>
